@@ -129,25 +129,25 @@ const ContactPage: React.FC = () => {
               <Box>
                 <Typography variant="h6" fontWeight={700}>Location</Typography>
                 <Link
-                  href="https://www.google.com/maps/place/88+BLUERIDGE+RD+FAIRFIELD,+CT+06825"
+                  href=""
                   target="_blank"
                   underline="hover"
                   color="inherit"
                   sx={{ fontSize: "1.25rem", color: "#d0eaf5", "&:hover": { color: "#42a5f5" } }}
                 >
-                  88 Blueridge Rd, Fairfield, CT 06825
+                 4820 GREENRIDGE CT FAIRFIRLD, CA, 94534
                 </Link>
               </Box>
               <Box>
                 <Typography variant="h6" fontWeight={700}>Phone</Typography>
-                <Link href="tel:+18663720906" underline="hover" color="inherit" sx={{ fontSize: "1.25rem", color: "#d0eaf5", "&:hover": { color: "#42a5f5" } }}>
-                  (866) 372-0906
+                <Link href="tel:+14155324090" underline="hover" color="inherit" sx={{ fontSize: "1.25rem", color: "#d0eaf5", "&:hover": { color: "#42a5f5" } }}>
+                  (415) 532-4090
                 </Link>
               </Box>
               <Box>
                 <Typography variant="h6" fontWeight={700}>Email</Typography>
-                <Link href="mailto:info@51statetransportation.com" underline="hover" color="inherit" sx={{ fontSize: "1.25rem", color: "#d0eaf5", "&:hover": { color: "#42a5f5" } }}>
-                  info@51statetransportation.com
+                <Link href="mailto:matiasriesco88@hotmail.com" underline="hover" color="inherit" sx={{ fontSize: "1.25rem", color: "#d0eaf5", "&:hover": { color: "#42a5f5" } }}>
+                  matiasriesco88@hotmail.com
                 </Link>
               </Box>
             </Stack>

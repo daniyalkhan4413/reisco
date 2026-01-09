@@ -19,16 +19,13 @@ const TermsAndPrivacy: React.FC = () => {
         zIndex: 1,
         py: 12,
         px: isSmallScreen ? 2 : 6,
-        color: "#e3f2fd", // light blue text
+        color: "#e3f2fd",
         overflow: "hidden",
         "&::before": {
           content: '""',
           position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          backgroundImage: `url('/assets/containers.jpg')`, // adjust path if needed
+          inset: 0,
+          backgroundImage: `url('/assets/containers.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           zIndex: -2,
@@ -36,11 +33,8 @@ const TermsAndPrivacy: React.FC = () => {
         "&::after": {
           content: '""',
           position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          backgroundColor: "#0d47a1", // dark blue overlay
+          inset: 0,
+          backgroundColor: "#0d47a1",
           zIndex: -1,
         },
       }}
@@ -63,31 +57,41 @@ const TermsAndPrivacy: React.FC = () => {
         </Typography>
 
         <Typography mb={2}>
-          Welcome to 51 State Transportation Solutions LLC. By using our website, you agree to these Terms of Use. Please read them carefully.
+          Welcome to RIESCO CO. By accessing or using our website, you agree to be
+          bound by the following Terms of Use. Please review them carefully.
         </Typography>
 
         <Section title="1. About Us">
-          51 State Transportation Solutions LLC is a transportation brokerage company connecting shippers with independent carriers. We do not directly transport goods.
+          RIESCO CO is a transportation brokerage and logistics services provider
+          that connects shippers with independent carriers. We do not directly
+          operate trucks or transport goods.
         </Section>
 
         <Section title="2. Use of the Website">
-          You agree to use the website for lawful purposes and to provide accurate information when requesting quotes or services.
+          You agree to use this website for lawful purposes only and to provide
+          accurate and complete information when requesting quotes or services.
         </Section>
 
         <Section title="3. Services and Quotes">
-          Shipping quotes provided are estimates and subject to change. Final pricing may vary based on additional services.
+          All shipping quotes provided are estimates and may change based on
+          shipment details, carrier availability, or additional services
+          requested.
         </Section>
 
         <Section title="4. Limitation of Liability">
-          We are not liable for delays, damages, or losses incurred during transportation. Our role is limited to connecting shippers with carriers.
+          RIESCO CO is not responsible for delays, damages, or losses occurring
+          during transportation. Our role is limited to coordinating services
+          between shippers and carriers.
         </Section>
 
         <Section title="5. Intellectual Property">
-          All content on this website is the property of 51 State Transportation Solutions LLC and may not be used without permission.
+          All website content, including text, graphics, logos, and media, is the
+          property of RIESCO CO and may not be used without written permission.
         </Section>
 
         <Section title="6. Governing Law" mb={6}>
-          These terms are governed by the laws of the State of Connecticut.
+          These terms shall be governed by and interpreted in accordance with the
+          laws of the State of Connecticut.
         </Section>
 
         <Divider sx={{ my: 6, borderColor: "#90caf9" }} />
@@ -98,46 +102,57 @@ const TermsAndPrivacy: React.FC = () => {
         </Typography>
 
         <Typography mb={2}>
-          We are committed to protecting your privacy. This policy explains how we collect and use your information.
+          RIESCO CO respects your privacy and is committed to protecting your
+          personal information. This policy explains how we collect, use, and
+          safeguard your data.
         </Typography>
 
         <Section title="1. Information We Collect">
-          We collect personal information like your name, email, phone number, and shipping details.
+          We may collect personal information such as your name, email address,
+          phone number, and shipment-related details.
         </Section>
 
         <Section title="2. How We Use Your Information">
-          Your information is used to provide shipping quotes, process shipments, and improve our services.
+          Your information is used to provide quotes, coordinate logistics
+          services, communicate updates, and improve our offerings.
         </Section>
 
         <Section title="3. Sharing of Information">
-          We may share your information with third-party carriers for shipping purposes. We do not sell your information.
+          We may share necessary information with third-party carriers or service
+          partners solely for the purpose of fulfilling logistics services. We do
+          not sell personal data.
         </Section>
 
         <Section title="4. Data Security">
-          We implement security measures to protect your personal information.
+          We implement reasonable technical and organizational measures to
+          protect your personal information from unauthorized access.
         </Section>
 
         <Section title="5. Cookies">
-          Our website may use cookies to improve user experience. You can control cookie preferences through your browser settings.
+          Our website may use cookies to enhance functionality and user
+          experience. You can manage cookie preferences through your browser
+          settings.
         </Section>
 
         <Section title="6. Third-Party Links">
-          We are not responsible for the privacy practices of other websites linked on our site.
+          Our website may contain links to external websites. RIESCO CO is not
+          responsible for the privacy practices or content of those sites.
         </Section>
 
         <Section title="7. Contact Us">
-          If you have any questions, please contact us at:
+          If you have any questions regarding these Terms or our Privacy Policy,
+          please contact us:
           <br />
-          <strong>Email:</strong> info@51statetransportation.com
+          <strong>Email:</strong> matiasriesco88@hotmail.com
           <br />
-          <strong>Phone:</strong> (866) 372 0906
+          <strong>Phone:</strong> (415) 532-4090
         </Section>
       </Container>
     </Box>
   );
 };
 
-// Reusable section component for spacing and style consistency
+// Reusable section component
 const Section: React.FC<{
   title: string;
   children: React.ReactNode;
