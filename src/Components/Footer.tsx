@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
               <Stack spacing={1}>
                 <Typography variant="body2">
                   Address: 4820 GREENRIDGE CT
-FAIRFIRLD, CA, 94534
+FAIRFIELD, CA, 94534
                 </Typography>
                 <Typography variant="body2">Phone: (415) 532-4090
 </Typography>

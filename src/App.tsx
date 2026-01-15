@@ -13,6 +13,7 @@ import ContactPage from './Components/Contactus';
 import TermsAndPrivacy from './Components/Terms';
 import NotFoundPage from './Components/Notfound'; // 👉 Import 404 page
 import CarrierPartnersPage from './Components/CarrierPartners';
+import ShippersPage from './Components/shipperpage';
 
 import './App.css';
 
@@ -31,6 +32,7 @@ const App: React.FC = () => {
           <Route path="/contact" element={<PageWrapper><ContactPage /></PageWrapper>} />
           <Route path="/carrier" element={<PageWrapper><CarrierPartnersPage /></PageWrapper>} />
           <Route path="/terms-and-conditions" element={<PageWrapper><TermsAndPrivacy /></PageWrapper>} />
+          <Route path="/shippers" element={<PageWrapper><ShippersPage /></PageWrapper>} />
           {/* 👉 Catch-all route for 404 */}
           <Route path="*" element={<PageWrapper><NotFoundPage /></PageWrapper>} />
         </Routes>

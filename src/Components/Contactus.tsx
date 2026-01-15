@@ -135,7 +135,7 @@ const ContactPage: React.FC = () => {
                   color="inherit"
                   sx={{ fontSize: "1.25rem", color: "#d0eaf5", "&:hover": { color: "#42a5f5" } }}
                 >
-                 4820 GREENRIDGE CT FAIRFIRLD, CA, 94534
+                 4820 GREENRIDGE CT FAIRFIELD, CA, 94534
                 </Link>
               </Box>
               <Box>

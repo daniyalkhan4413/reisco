@@ -19,6 +19,7 @@ import logoImage from "./assets/logo.png";
 
 const pages = [
   { name: "Services", path: "/services" },
+  { name: "Shippers", path: "/shippers" },
   { name: "Carriers", path: "/carrier" },
   { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
