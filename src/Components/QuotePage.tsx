@@ -87,7 +87,7 @@ const QuotePage: React.FC = () => {
 
     
     axios
-      .post("", formData)
+      .post("https://biancamailserver.vercel.app/api/send-quote", formData)
       .then((response) => {
         if (response.status === 200) {
           setFormData({

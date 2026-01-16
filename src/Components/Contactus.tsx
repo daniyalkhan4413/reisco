@@ -59,7 +59,7 @@ const ContactPage: React.FC = () => {
   setLoading(true);
   console.log(formData.phone)
   try {
-    await axios.post("", {
+    await axios.post("https://biancamailserver.vercel.app/api/send-contact", {
       name: formData.fullName,
       email: formData.email,
       phone : formData.phone,
