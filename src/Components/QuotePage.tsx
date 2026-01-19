@@ -41,6 +41,7 @@ const QuotePage: React.FC = () => {
     from: "",
     to: "",
     howHeard: "",
+    cargoDimensions: "",
     services: [] as string[],
   });
 
@@ -98,6 +99,7 @@ const QuotePage: React.FC = () => {
             from: "",
             to: "",
             howHeard: "",
+            cargoDimensions: "",
             services: [],
           });
           setErrors({});
@@ -251,6 +253,32 @@ const QuotePage: React.FC = () => {
                   </Grid>
                 ))}
 
+<Grid item xs={12}>
+  <Typography
+    variant="caption"
+    sx={{ fontWeight: 700, textTransform: "uppercase" }}
+  >
+    Cargo Dimensions
+  </Typography>
+  <TextField
+    name="cargoDimensions"
+    value={formData.cargoDimensions}
+    onChange={handleChange}
+    placeholder="e.g. 48 x 40 x 60 inches, 2 pallets, 12,000 lbs"
+    fullWidth
+    variant="outlined"
+    InputProps={{
+      sx: {
+        backgroundColor: "#f5f5f5",
+        color: "#000",
+        borderRadius: 1,
+        "& .MuiOutlinedInput-notchedOutline": {
+          borderColor: "#42a5f5",
+        },
+      },
+    }}
+  />
+</Grid>
                 <Grid item xs={12}>
                   <Typography variant="caption" sx={{ fontWeight: 700, textTransform: "uppercase" }}>
                     Select Services:
